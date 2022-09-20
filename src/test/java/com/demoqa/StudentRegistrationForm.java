@@ -40,7 +40,8 @@ public class StudentRegistrationForm {
     $("[id=react-select-3-input]").setValue("Haryana").pressEnter();
     $("[id=react-select-4-input]").setValue("Karnal").pressEnter();
     $("[id=submit]").click();
-    $("[class=table-responsive]").shouldHave(text("Victoria"),
+
+    $("[class=table-responsive]").shouldHave(text("Victoria"), //Проверка данных
             text("Yu"),
             text("victoria.yu1724@gmail.com"),
             text("Female"),
@@ -51,5 +52,6 @@ public class StudentRegistrationForm {
             text("New street "),
             text("Haryana Karnal"));
     $("[id=closeLargeModal]").click();
+
     }
 }
